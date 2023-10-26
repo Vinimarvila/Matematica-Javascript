@@ -1,0 +1,83 @@
+<html>
+<body>
+	<h2>soma:</h2>
+	<p id="soma"></p>
+	<p>A soma de 10 + 30 é igual a:</p>
+	<p id="somaResultado"></p>
+
+	<h2>subtração:</h2>
+	<p id="subtracao"></p>
+	<p>A subtração de 30 - 10 é igual a:</p>
+	<p id="subtracaoResultado"></p>
+
+	<h2>multiplicação</h2>
+	<p id="multiplicacao"></p>
+	<p> A multiplicação de 15 x 2 é igual a:</p>
+	<p id="multiplicacaoResultado"></p>
+
+	<h2>divisão</h2>
+	<p id="divisao"></p>
+	<p>A divisão de 100 por 5 é igual a:</p>
+	<p id="divisaoResultado"></p>
+
+	<h2>Resto da divisão</h2>
+	<p id= "resto da divisao"></p>
+	<p>O resto da divisão é:</p>
+	<p id="restodadivisaoResultado"></p>
+
+	<h2>valor médio</h2>
+	<p id= "valor medio"></p>
+	<p>O valor médio é:</p>
+	<p id="valormedioResultado"></p>
+
+
+
+	<script>
+		let numero1= 10;
+		let numero2= 30;
+		let resultadoSoma= numero1 + numero2;
+		document.getElementById("somaResultado").innerHTML = resultadoSoma;
+	</script>
+
+	<script>
+		let A = 30
+		let B = 10
+		let resultadoSubtracao = A - B;
+		document.getElementById("subtracaoResultado").innerHTML = resultadoSubtracao;
+	</script>
+
+	<script>
+		let C = 15;
+        let D = 2;
+        let resultadomultiplicacao = C * D;
+        document.getElementById("multiplicacaoResultado").innerHTML = resultadomultiplicacao;
+    </script>
+
+    <script>
+    	let E = 100;
+    	let F = 5;
+    	let resultadodivisao = E /F;
+    	document.getElementById("divisaoResultado").innerHTML = resultadodivisao;
+    </script>
+
+    <script>
+    	let G = 45;
+    	let H = 6;
+    	let restodadivisaoresultado = G % H;
+    	document.getElementById("restodadivisaoResultado").innerHTML = restodadivisaoresultado;
+    </script>
+
+    <script>
+    	let I = 15;
+    	let J = 25;
+    	let K = 35;
+    	let L = 45;
+
+        let resultadovalorMedio = (I + J + K + L)/4;
+        console.log("a média dos valores é:" + resultadoValorMedio); 
+
+    </script>
+
+</body>
+</html>
+
