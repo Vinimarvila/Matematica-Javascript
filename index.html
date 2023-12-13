@@ -1,86 +1,122 @@
-<DOCTYPE html>
-<html lang=pt-br>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">  
-</head> 
+    <meta charset="UTF-8">
+</head>
 <body>
     <h2>soma:</h2>
     <p id="soma"></p>
     <p>A soma de 10 + 30 é igual a:</p>
     <p id="somaResultado"></p>
+    
     <h2>subtração:</h2>
     <p id="subtracao"></p>
     <p>A subtração de 30 - 10 é igual a:</p>
     <p id="subtracaoResultado"></p>
+    
     <h2>multiplicação</h2>
     <p id="multiplicacao"></p>
-    <p> A multiplicação de 15 x 2 é igual a:</p>
+    <p>A multiplicação de 15 x 2 é igual a:</p>
     <p id="multiplicacaoResultado"></p>
+    
     <h2>divisão</h2>
     <p id="divisao"></p>
     <p>A divisão de 100 por 5 é igual a:</p>
     <p id="divisaoResultado"></p>
+    
     <h2>Resto da divisão</h2>
-    <p id= "resto da divisao"></p>
+    <p id="resto da divisao"></p>
     <p>O resto da divisão é:</p>
     <p id="restodadivisaoResultado"></p>
+    
     <h2>valor médio</h2>
-    <p id= "valor medio"></p>
+    <p id="valor medio"></p>
     <p>O valor médio é:</p>
     <p id="valormedioResultado"></p>
+    
     <h2>Porcentagem</h2>
-    <p  id="porcentagem"></p>
+    <p id="porcentagem"></p>
     <p>25% de 80 é:</p>
-    <p id= "porcentagemResultado"></p>
+    <p id="porcentagemResultado"></p>
+    
     <h2>Incremento</h2>
     <p id="incremento"></p>
-    <p>o incremento aumentativo de 99 em 1 é:</p>
-    <p id= "incrementoResultado"></p>
+    <p>O incremento aumentativo de 99 em 1 é:</p>
+    <p id="incrementoResultado"></p>
+    
     <h2>decremento</h2>
     <p id="decremento"></p>
-    <p>o decremento de 1 em 100 é:</p>
+    <p>O decremento de 1 em 100 é igual a:</p>
     <p id="decrementoResultado"></p>
+    
+    <h2>dobro do incremento</h2>
+    <p id="dobrodoincremento"></p>
+    <p>O dobro do incremento é:</p>
+    <p id="dobrodoincrementoResultado"></p>
+
+    <h2>ordem das operações</h2>
+    <p id="ordemdasoperacoes"></p>
+    <p>A ordem das operações é:</p>
+    <p id="ordemdasoperacoesResultado"></p>
+    
     <script>
-        let numero1= 10;
-        let numero2= 30;
-        let resultadoSoma= numero1 + numero2;
+        let numero1 = 10;
+        let numero2 = 30;
+        let resultadoSoma = numero1 + numero2;
         document.getElementById("somaResultado").innerHTML = resultadoSoma;
-        let A = 30
-        let B = 10
+
+        let A = 30;
+        let B = 10;
         let resultadoSubtracao = A - B;
         document.getElementById("subtracaoResultado").innerHTML = resultadoSubtracao;
+
         let C = 15;
         let D = 2;
         let resultadomultiplicacao = C * D;
         document.getElementById("multiplicacaoResultado").innerHTML = resultadomultiplicacao;
+
         let E = 100;
         let F = 5;
-        let resultadodivisao = E /F;
+        let resultadodivisao = E / F;
         document.getElementById("divisaoResultado").innerHTML = resultadodivisao;
+
         let G = 45;
         let H = 6;
         let restodadivisaoresultado = G % H;
         document.getElementById("restodadivisaoResultado").innerHTML = restodadivisaoresultado;
+
         let I = 15;
         let J = 25;
         let K = 35;
         let L = 45;
-        let resultadoValorMedio = (I + J + K + L)/4;
+        let resultadoValorMedio = (I + J + K + L) / 4;
         document.getElementById("valormedioResultado").innerHTML = resultadoValorMedio;
+
         let M = 25;
         let N = 80;
-        let porcentagemResultado = (M * N)/100;  
+        let porcentagemResultado = (M * N) / 100;
         document.getElementById("porcentagemResultado").innerHTML = porcentagemResultado;
+
         let O = 99;
         let P = 1;
-        let incrementoResultado = O + + P;
+        let incrementoResultado = O + P;
         document.getElementById("incrementoResultado").innerHTML = incrementoResultado;
-        //arrumar depois
-        let Q = 1;
-        let R = 100;
-        let decrementoResultado = Q - - R;
+
+        let Q = 100;
+        let R = 1;
+        let decrementoResultado = Q - R;
         document.getElementById("decrementoResultado").innerHTML = decrementoResultado;
+
+        let S = 99;
+        let T = 1;
+        let dobrodoIncremento = S + T * 2;
+        let dobrodoIncrementoResultado = dobrodoIncremento * 2;
+        document.getElementById("dobrodoincrementoResultado").innerHTML = dobrodoIncrementoResultado;
+
+        let U = 3 + 5 + 23 * 5 + 2;
+        let V = (3 + 5) * 2 * (3 + 5) * 2; // Corrigido
+        let ordemdasoperacoesResultado = U;
+        document.getElementById("ordemdasoperacoesResultado").innerHTML = ordemdasoperacoesResultado;
     </script>
 </body>
 </html>
-
